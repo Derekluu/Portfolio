@@ -1,0 +1,123 @@
+.nav_bar {
+    border-bottom: 1px solid black;
+}
+
+.nav_bar a {
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#title_name {
+    font-size: 3.5rem;
+}
+
+.homepage_project_image {
+    max-width: 700px;
+    height: 50vh;
+}
+.project_card_name  {
+    text-align: center;
+}
+
+.project_card_about {
+    text-align: center;
+}
+
+.project_page_description {
+    margin-top: 1%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    font-size: 100%;
+    background-color: #efefef;
+
+  }
+  .header{
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 20px 15%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+    column-gap: 50px;
+  }
+  .colh-1{
+    flex: auto;
+  }
+  .header div{
+    text-align: center;
+  }
+  .colh-1 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 20px
+  }
+  .footer{
+    margin-top: 150px;
+    width: 100%;
+    padding: 100px 15%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+    column-gap: 50px;
+    
+  }
+  .footer img{
+    
+    width: 300px;
+    height: auto;
+  }
+  .footer div{
+    text-align: center;
+  }
+  .colu-1{
+    flex-grow: 1;
+  }
+  .colu-2{
+    flex-grow: 1;
+  }
+  .colu-3{
+    display: block;
+    flex-grow: 2;
+  }
+  .footer div h7{
+    font-weight: 300;
+    margin-bottom: 50px;
+    color: #efefef;
+    font-size: 30px;
+    
+  }
+  .footer div h8{
+    font-weight: 300;
+    margin-bottom: 50px;
+    color: #efefef;
+    font-size: 20px;
+  }
+  .colu-3 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px
+  }
+  .row2 {
+    position: relative;
+    margin: 20px;
+    width: 100%;
+  }
