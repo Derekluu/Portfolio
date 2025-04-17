@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derek Luu's Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-left">
+      <div class="colh-1">
+        <p>Derek Luu</p>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="colh-1">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="colh-1">
+        <a href="Illustrations.html">Illustrations</a>
+      </div>
+      <div class="colh-1">
+        <a href="animations.html">Animations</a>
+      </div>
+      <div class="colh-1">
+        <a href="webprojects.html">Web Projects</a>
+      </div>
+      <div class="colh-1">
+        <a href="sketches.html">Sketches</a>
+      </div>
+      <div class="colh-1">
+        <a href="aboutme.html">Artist Bio</a>
+      </div>
+      <div class="colh-1">
+        <a href="contactinfo.html">Contact Info</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery-item"><img src="assets/webprojects/1_1.gif" alt="">  <p><em>Interactive Web Navigation</em>, 2024 </p> <p>Visit <a href="https://derekluu.github.io/Art-109-Final-Project/home.html" target="_blank">Here</a> </p>
+    </div>
+    <div class="gallery-item"><img src="assets/webprojects/2.png" alt=""> <p><em>Cat Archival Website</em>, 2024</p> <p>Visit <a href="https://derekluu.github.io/art-109/project1/index.html" target="_blank">Here</a> </p></div>
+  
+  </div>
+  
+<!-- Lightbox container -->
+<div id="lightbox" class="lightbox hidden">
+  <span class="close">&times;</span>
+  <div class="lightbox-content">
+    <img class="lightbox-img" src="" alt="">
+    <p class="lightbox-caption"></p>
+  </div>
+</div>
+
+<script>
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.querySelector(".lightbox-img");
+  const lightboxCaption = document.querySelector(".lightbox-caption");
+  const closeBtn = document.querySelector(".close");
+
+  document.querySelectorAll(".gallery-item").forEach(item => {
+    const img = item.querySelector("img");
+    const caption = item.querySelector("p");
+
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightboxCaption.innerHTML = caption ? caption.innerHTML : "";
+      lightbox.classList.remove("hidden");
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    lightbox.classList.add("hidden");
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.add("hidden");
+    }
+  });
+</script>
+
+</body>
+</html>
